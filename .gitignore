@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python packaging
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+
+# Large datasets
+eye/
+mouth/
+
+# Large dlib model
+shape_predictor_68_face_landmarks.dat
+
+# Local/private configuration
+.env
+
+# TensorFlow/Keras temporary files
+*.h5
+*.keras.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+# Windows
+desktop.ini
+Thumbs.db
+# Local backup files
+src/detect_drowsiness_backup.py
+

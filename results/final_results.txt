@@ -1,0 +1,107 @@
+DRIVER DROWSINESS DETECTION SYSTEM
+FINAL EXPERIMENTAL RESULTS
+===========================
+
+
+1. EYE CNN
+----------
+
+Architecture:
+MobileNetV2 with transfer learning
+
+Evaluation:
+Subject-aware unseen test subjects
+
+Accuracy  : 90.68%
+Precision : 99.57%
+Recall    : 82.25%
+F1 Score  : 90.09%
+
+Confusion Matrix:
+
+                 Predicted
+              Closed   Open
+
+Actual Closed  11662     44
+Actual Open      2207  10229
+
+
+2. YAWN CNN
+-----------
+
+Architecture:
+MobileNetV2 with transfer learning
+
+Evaluation:
+Held-out test data
+
+Accuracy  : 95.21%
+Precision : 95.45%
+Recall    : 95.85%
+F1 Score  : 95.19%
+
+Confusion Matrix:
+
+                 Predicted
+              No Yawn   Yawn
+
+Actual No Yawn    490     28
+Actual Yawn       21     485
+
+
+3. HYBRID REAL-TIME SYSTEM
+---------------------------
+
+Geometric Features:
+- Eye Aspect Ratio (EAR)
+- Mouth Aspect Ratio (MAR)
+
+Deep Learning:
+- Eye MobileNetV2 CNN
+- Yawn MobileNetV2 CNN
+
+Fusion:
+- EAR + Eye CNN
+- MAR + Yawn CNN
+
+Temporal Logic:
+- Continuous eye closure threshold: 5 seconds
+- Continuous eye opening recovery threshold: 3 seconds
+- Yawn duration threshold: 1 second
+
+Final Runtime Configuration:
+- Resolution: 640 x 480
+- CNN inference interval: Every 2 frames
+- Average FPS: 3.42
+
+
+4. DETECTION BEHAVIOR
+---------------------
+
+Normal state:
+Driver remains in alert state when eyes are open and no
+persistent yawn is detected.
+
+Yawning:
+Yawn CNN and MAR fusion produces a yawn warning.
+Yawning does not directly trigger the drowsiness alarm.
+
+Drowsiness:
+The system triggers a drowsiness alert when the hybrid eye
+decision remains closed for at least 5 continuous seconds.
+
+Recovery:
+The alarm is stopped only after the eyes remain open continuously
+for at least 3 seconds.
+
+
+5. IMPORTANT INTERPRETATION
+---------------------------
+
+The CNN metrics were measured on held-out evaluation data.
+The real-time FPS was measured separately on the development
+machine.
+
+The reported values are actual experimental measurements from
+this implementation and are not copied from a reference project.
+

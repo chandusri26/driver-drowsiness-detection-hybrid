@@ -1,0 +1,8 @@
+              precision    recall  f1-score   support
+
+     No Yawn       0.96      0.95      0.95       518
+        Yawn       0.95      0.96      0.95       506
+
+    accuracy                           0.95      1024
+   macro avg       0.95      0.95      0.95      1024
+weighted avg       0.95      0.95      0.95      1024

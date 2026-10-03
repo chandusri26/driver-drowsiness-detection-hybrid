@@ -1,0 +1,48 @@
+DRIVER DROWSINESS DETECTION SYSTEM
+REAL-TIME PERFORMANCE EVALUATION
+=================================
+
+Final Runtime Configuration
+---------------------------
+Webcam Resolution: 640 x 480
+CNN Inference Strategy: Batched eye inference
+CNN Inference Interval: Every 2 frames
+
+Final Benchmark
+----------------
+Total Runtime: 67.03 seconds
+Frames Processed: 229
+Average FPS: 3.42
+Minimum FPS: 0.32
+Maximum FPS: 29.19
+
+Optimization Comparison
+-----------------------
+Original Configuration:
+Resolution: 1280 x 720
+CNN inference: Every frame
+Average FPS: 1.76
+
+Optimization 1:
+Resolution: 1280 x 720
+Batched eye CNN + CNN every 2 frames
+Average FPS: 2.62
+
+Optimization 2:
+Resolution: 640 x 480
+Batched eye CNN + CNN every 2 frames
+Average FPS: 3.42
+
+Overall Improvement
+-------------------
+Average FPS improved from 1.76 FPS to 3.42 FPS.
+
+Approximate improvement: 94.3%
+
+Note
+----
+The benchmark represents performance measured on the development
+machine under the tested runtime conditions. FPS may vary depending
+on CPU/GPU, webcam, background load, lighting, and other system
+conditions.
+
