@@ -413,7 +413,6 @@ The training datasets are excluded from GitHub.
 ### Drowsiness Alert
 
 ![Drowsiness Alert](screenshots/eyes_closed.png)
-![Drowsiness Alert](screenshots/eyes_closed_and_yawn.png)
 
 ## Limitations
 
@@ -457,3 +456,7 @@ The training datasets are excluded from GitHub.
 ## Disclaimer
 
 This project is developed for educational and research purposes. It should not be relied upon as the sole mechanism for determining driver fitness or preventing vehicle accidents.
+
+## Disclaimer
+
+Garika Chandu Sri
