@@ -320,7 +320,7 @@ driver-drowsiness-detection-hybrid/
 ### 1. Clone the repository
 
 ```bash
-git clone <YOUR-GITHUB-REPOSITORY-URL>
+git clone <(https://github.com/chandusri26/driver-drowsiness-detection-hybrid)>
 cd driver-drowsiness-detection-hybrid
 ```
 
