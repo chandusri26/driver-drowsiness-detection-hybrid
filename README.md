@@ -457,6 +457,6 @@ The training datasets are excluded from GitHub.
 
 This project is developed for educational and research purposes. It should not be relied upon as the sole mechanism for determining driver fitness or preventing vehicle accidents.
 
-## Disclaimer
+## Author
 
 Garika Chandu Sri
